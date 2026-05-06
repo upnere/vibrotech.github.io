@@ -1,4 +1,4 @@
-# Vibration Engineering & Parallel Computing Course Materials
+# Course Materials
 
 This repository contains interactive course materials for studying mechanical vibrations and the basics of parallel programming using Python. The environment is powered by **JupyterLite**, allowing you to run simulations directly in your browser without any local installation.
 
