@@ -12,19 +12,18 @@ This repository contains interactive course materials for studying mechanical vi
 
 ## 📂 Course Structure
 
-### 01_Introduction
+### 1_Introduction
 **Focus:** Getting started with Python for engineers.
 * Fundamentals of Python syntax.
 * Introduction to NumPy and Matplotlib for vibration data visualization.
 * **Goal:** Learn how to translate physical vibration problems into readable code.
 
-### 02_Free_Forced_Vibration
+### 2_Free_Forced_Vibration
 **Focus:** Mechanical oscillations and dynamics.
 * **Free Vibration:** Exploring natural frequencies and damping ratios.
 * **Forced Vibration:** Investigating system responses to external harmonic forces and the phenomenon of resonance.
-* **Interactivity:** Use built-in sliders to change mass ($m$), stiffness ($k$), and damping ($c$) constants.
 
-### 03_MPI_Python_Basics
+### 3_Parallel_Programming
 **Focus:** Introduction to Parallel Computing (Message Passing Interface).
 * Basic concepts of process communication (`rank`, `size`, `send/recv`).
 * Syntax examples of distributed computing using the `mpi4py` library.
