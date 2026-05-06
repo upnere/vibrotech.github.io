@@ -1,37 +1,40 @@
-# JupyterLite Demo
+# Vibration Engineering & Parallel Computing Course Materials
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+This repository contains interactive course materials for studying mechanical vibrations and the basics of parallel programming using Python. The environment is powered by **JupyterLite**, allowing you to run simulations directly in your browser without any local installation.
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+## 🚀 How to Use
+1. Access the interactive environment via the link provided in your course dashboard (or GitHub Pages).
+2. Use the **File Browser** on the left to navigate through the modules.
+3. Open any `.ipynb` file to start learning.
+4. To execute a code cell, select it and press `Shift + Enter`.
 
-## ✨ Try it in your browser ✨
+---
 
-➡️ **https://jupyterlite.github.io/demo**
+## 📂 Course Structure
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+### 01_Introduction
+**Focus:** Getting started with Python for engineers.
+* Fundamentals of Python syntax.
+* Introduction to NumPy and Matplotlib for vibration data visualization.
+* **Goal:** Learn how to translate physical vibration problems into readable code.
 
-## Requirements
+### 02_Free_Forced_Vibration
+**Focus:** Mechanical oscillations and dynamics.
+* **Free Vibration:** Exploring natural frequencies and damping ratios.
+* **Forced Vibration:** Investigating system responses to external harmonic forces and the phenomenon of resonance.
+* **Interactivity:** Use built-in sliders to change mass ($m$), stiffness ($k$), and damping ($c$) constants.
 
-JupyterLite is being tested against modern web browsers:
+### 03_MPI_Python_Basics
+**Focus:** Introduction to Parallel Computing (Message Passing Interface).
+* Basic concepts of process communication (`rank`, `size`, `send/recv`).
+* Syntax examples of distributed computing using the `mpi4py` library.
+* **Note:** These scripts are provided as **syntax examples only**. Due to browser security sandboxing, MPI execution is not supported within the JupyterLite environment. To run these, a local MPI installation is required.
 
-- Firefox 90+
-- Chromium 89+
+---
 
-## Deploy your JupyterLite website on GitHub Pages
-
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
-
-## Further Information and Updates
-
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
-
-This template provides the Pyodide kernel (`jupyterlite-pyodide-kernel`), the JavaScript kernel (`jupyterlite-javascript-kernel`), and the p5 kernel (`jupyterlite-p5-kernel`), along with other
-optional utilities and extensions to make the JupyterLite experience more enjoyable. See the
-[`requirements.txt` file](requirements.txt) for a list of all the dependencies provided.
-
-For a template based on the Xeus kernel, see the [`jupyterlite/xeus-python-demo` repository](https://github.com/jupyterlite/xeus-python-demo)
-
-
+## 🛠 Local Setup (Optional)
+If you wish to run these notebooks on your own computer:
+1. Install Python 3.8+.
+2. Install required libraries:
+   ```bash
+   pip install numpy matplotlib mpi4py
